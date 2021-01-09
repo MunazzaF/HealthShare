@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190AB0FA25AA43330048E264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB0F925AA43330048E264 /* AppDelegate.swift */; };
+		190AB0FC25AA43330048E264 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB0FB25AA43330048E264 /* SceneDelegate.swift */; };
+		190AB0FE25AA43330048E264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB0FD25AA43330048E264 /* ViewController.swift */; };
+		190AB10125AA43330048E264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190AB0FF25AA43330048E264 /* Main.storyboard */; };
+		190AB10325AA43370048E264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190AB10225AA43370048E264 /* Assets.xcassets */; };
+		190AB10625AA43370048E264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190AB10425AA43370048E264 /* LaunchScreen.storyboard */; };
+		190AB11125AA43370048E264 /* HealthShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB11025AA43370048E264 /* HealthShareTests.swift */; };
+		190AB11C25AA43370048E264 /* HealthShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB11B25AA43370048E264 /* HealthShareUITests.swift */; };
+		190AB12125AA43370048E264 /* HealthShare WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 190AB12025AA43370048E264 /* HealthShare WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		190AB12725AA43370048E264 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190AB12525AA43370048E264 /* Interface.storyboard */; };
+		190AB12925AA433B0048E264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190AB12825AA433B0048E264 /* Assets.xcassets */; };
+		190AB13025AA433B0048E264 /* HealthShare WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 190AB12F25AA433B0048E264 /* HealthShare WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		190AB13525AA433B0048E264 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB13425AA433B0048E264 /* InterfaceController.swift */; };
+		190AB13725AA433B0048E264 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB13625AA433B0048E264 /* ExtensionDelegate.swift */; };
+		190AB13925AA433B0048E264 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB13825AA433B0048E264 /* NotificationController.swift */; };
+		190AB13B25AA433B0048E264 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB13A25AA433B0048E264 /* ComplicationController.swift */; };
+		190AB13D25AA433F0048E264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190AB13C25AA433F0048E264 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190AB10D25AA43370048E264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190AB0EE25AA43320048E264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190AB0F525AA43330048E264;
+			remoteInfo = HealthShare;
+		};
+		190AB11825AA43370048E264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190AB0EE25AA43320048E264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190AB0F525AA43330048E264;
+			remoteInfo = HealthShare;
+		};
+		190AB12225AA43370048E264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190AB0EE25AA43320048E264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190AB11F25AA43370048E264;
+			remoteInfo = "HealthShare WatchKit App";
+		};
+		190AB13125AA433B0048E264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190AB0EE25AA43320048E264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190AB12E25AA433B0048E264;
+			remoteInfo = "HealthShare WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		190AB14525AA433F0048E264 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				190AB13025AA433B0048E264 /* HealthShare WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB14925AA433F0048E264 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				190AB12125AA43370048E264 /* HealthShare WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		190AB0F625AA43330048E264 /* HealthShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AB0F925AA43330048E264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		190AB0FB25AA43330048E264 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		190AB0FD25AA43330048E264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		190AB10025AA43330048E264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		190AB10225AA43370048E264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		190AB10525AA43370048E264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		190AB10725AA43370048E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190AB10C25AA43370048E264 /* HealthShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AB11025AA43370048E264 /* HealthShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthShareTests.swift; sourceTree = "<group>"; };
+		190AB11225AA43370048E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190AB11725AA43370048E264 /* HealthShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AB11B25AA43370048E264 /* HealthShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthShareUITests.swift; sourceTree = "<group>"; };
+		190AB11D25AA43370048E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190AB12025AA43370048E264 /* HealthShare WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthShare WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AB12625AA43370048E264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		190AB12825AA433B0048E264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		190AB12A25AA433B0048E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190AB12F25AA433B0048E264 /* HealthShare WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HealthShare WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190AB13425AA433B0048E264 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		190AB13625AA433B0048E264 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		190AB13825AA433B0048E264 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		190AB13A25AA433B0048E264 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		190AB13C25AA433F0048E264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		190AB13E25AA433F0048E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190AB13F25AA433F0048E264 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190AB0F325AA43330048E264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB10925AA43370048E264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB11425AA43370048E264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB12C25AA433B0048E264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190AB0ED25AA43320048E264 = {
+			isa = PBXGroup;
+			children = (
+				190AB0F825AA43330048E264 /* HealthShare */,
+				190AB10F25AA43370048E264 /* HealthShareTests */,
+				190AB11A25AA43370048E264 /* HealthShareUITests */,
+				190AB12425AA43370048E264 /* HealthShare WatchKit App */,
+				190AB13325AA433B0048E264 /* HealthShare WatchKit Extension */,
+				190AB0F725AA43330048E264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		190AB0F725AA43330048E264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				190AB0F625AA43330048E264 /* HealthShare.app */,
+				190AB10C25AA43370048E264 /* HealthShareTests.xctest */,
+				190AB11725AA43370048E264 /* HealthShareUITests.xctest */,
+				190AB12025AA43370048E264 /* HealthShare WatchKit App.app */,
+				190AB12F25AA433B0048E264 /* HealthShare WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		190AB0F825AA43330048E264 /* HealthShare */ = {
+			isa = PBXGroup;
+			children = (
+				190AB0F925AA43330048E264 /* AppDelegate.swift */,
+				190AB0FB25AA43330048E264 /* SceneDelegate.swift */,
+				190AB0FD25AA43330048E264 /* ViewController.swift */,
+				190AB0FF25AA43330048E264 /* Main.storyboard */,
+				190AB10225AA43370048E264 /* Assets.xcassets */,
+				190AB10425AA43370048E264 /* LaunchScreen.storyboard */,
+				190AB10725AA43370048E264 /* Info.plist */,
+			);
+			path = HealthShare;
+			sourceTree = "<group>";
+		};
+		190AB10F25AA43370048E264 /* HealthShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				190AB11025AA43370048E264 /* HealthShareTests.swift */,
+				190AB11225AA43370048E264 /* Info.plist */,
+			);
+			path = HealthShareTests;
+			sourceTree = "<group>";
+		};
+		190AB11A25AA43370048E264 /* HealthShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				190AB11B25AA43370048E264 /* HealthShareUITests.swift */,
+				190AB11D25AA43370048E264 /* Info.plist */,
+			);
+			path = HealthShareUITests;
+			sourceTree = "<group>";
+		};
+		190AB12425AA43370048E264 /* HealthShare WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				190AB12525AA43370048E264 /* Interface.storyboard */,
+				190AB12825AA433B0048E264 /* Assets.xcassets */,
+				190AB12A25AA433B0048E264 /* Info.plist */,
+			);
+			path = "HealthShare WatchKit App";
+			sourceTree = "<group>";
+		};
+		190AB13325AA433B0048E264 /* HealthShare WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				190AB13425AA433B0048E264 /* InterfaceController.swift */,
+				190AB13625AA433B0048E264 /* ExtensionDelegate.swift */,
+				190AB13825AA433B0048E264 /* NotificationController.swift */,
+				190AB13A25AA433B0048E264 /* ComplicationController.swift */,
+				190AB13C25AA433F0048E264 /* Assets.xcassets */,
+				190AB13E25AA433F0048E264 /* Info.plist */,
+				190AB13F25AA433F0048E264 /* PushNotificationPayload.apns */,
+			);
+			path = "HealthShare WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		190AB0F525AA43330048E264 /* HealthShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190AB14A25AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare" */;
+			buildPhases = (
+				190AB0F225AA43330048E264 /* Sources */,
+				190AB0F325AA43330048E264 /* Frameworks */,
+				190AB0F425AA43330048E264 /* Resources */,
+				190AB14925AA433F0048E264 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190AB12325AA43370048E264 /* PBXTargetDependency */,
+			);
+			name = HealthShare;
+			productName = HealthShare;
+			productReference = 190AB0F625AA43330048E264 /* HealthShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		190AB10B25AA43370048E264 /* HealthShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190AB14D25AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShareTests" */;
+			buildPhases = (
+				190AB10825AA43370048E264 /* Sources */,
+				190AB10925AA43370048E264 /* Frameworks */,
+				190AB10A25AA43370048E264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190AB10E25AA43370048E264 /* PBXTargetDependency */,
+			);
+			name = HealthShareTests;
+			productName = HealthShareTests;
+			productReference = 190AB10C25AA43370048E264 /* HealthShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		190AB11625AA43370048E264 /* HealthShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190AB15025AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShareUITests" */;
+			buildPhases = (
+				190AB11325AA43370048E264 /* Sources */,
+				190AB11425AA43370048E264 /* Frameworks */,
+				190AB11525AA43370048E264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190AB11925AA43370048E264 /* PBXTargetDependency */,
+			);
+			name = HealthShareUITests;
+			productName = HealthShareUITests;
+			productReference = 190AB11725AA43370048E264 /* HealthShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		190AB11F25AA43370048E264 /* HealthShare WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190AB14625AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare WatchKit App" */;
+			buildPhases = (
+				190AB11E25AA43370048E264 /* Resources */,
+				190AB14525AA433F0048E264 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190AB13225AA433B0048E264 /* PBXTargetDependency */,
+			);
+			name = "HealthShare WatchKit App";
+			productName = "HealthShare WatchKit App";
+			productReference = 190AB12025AA43370048E264 /* HealthShare WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		190AB12E25AA433B0048E264 /* HealthShare WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190AB14225AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare WatchKit Extension" */;
+			buildPhases = (
+				190AB12B25AA433B0048E264 /* Sources */,
+				190AB12C25AA433B0048E264 /* Frameworks */,
+				190AB12D25AA433B0048E264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HealthShare WatchKit Extension";
+			productName = "HealthShare WatchKit Extension";
+			productReference = 190AB12F25AA433B0048E264 /* HealthShare WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		190AB0EE25AA43320048E264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					190AB0F525AA43330048E264 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					190AB10B25AA43370048E264 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 190AB0F525AA43330048E264;
+					};
+					190AB11625AA43370048E264 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 190AB0F525AA43330048E264;
+					};
+					190AB11F25AA43370048E264 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					190AB12E25AA433B0048E264 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 190AB0F125AA43320048E264 /* Build configuration list for PBXProject "HealthShare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 190AB0ED25AA43320048E264;
+			productRefGroup = 190AB0F725AA43330048E264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				190AB0F525AA43330048E264 /* HealthShare */,
+				190AB10B25AA43370048E264 /* HealthShareTests */,
+				190AB11625AA43370048E264 /* HealthShareUITests */,
+				190AB11F25AA43370048E264 /* HealthShare WatchKit App */,
+				190AB12E25AA433B0048E264 /* HealthShare WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		190AB0F425AA43330048E264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB10625AA43370048E264 /* LaunchScreen.storyboard in Resources */,
+				190AB10325AA43370048E264 /* Assets.xcassets in Resources */,
+				190AB10125AA43330048E264 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB10A25AA43370048E264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB11525AA43370048E264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB11E25AA43370048E264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB12925AA433B0048E264 /* Assets.xcassets in Resources */,
+				190AB12725AA43370048E264 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB12D25AA433B0048E264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB13D25AA433F0048E264 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		190AB0F225AA43330048E264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB0FE25AA43330048E264 /* ViewController.swift in Sources */,
+				190AB0FA25AA43330048E264 /* AppDelegate.swift in Sources */,
+				190AB0FC25AA43330048E264 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB10825AA43370048E264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB11125AA43370048E264 /* HealthShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB11325AA43370048E264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB11C25AA43370048E264 /* HealthShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190AB12B25AA433B0048E264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190AB13925AA433B0048E264 /* NotificationController.swift in Sources */,
+				190AB13B25AA433B0048E264 /* ComplicationController.swift in Sources */,
+				190AB13725AA433B0048E264 /* ExtensionDelegate.swift in Sources */,
+				190AB13525AA433B0048E264 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190AB10E25AA43370048E264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190AB0F525AA43330048E264 /* HealthShare */;
+			targetProxy = 190AB10D25AA43370048E264 /* PBXContainerItemProxy */;
+		};
+		190AB11925AA43370048E264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190AB0F525AA43330048E264 /* HealthShare */;
+			targetProxy = 190AB11825AA43370048E264 /* PBXContainerItemProxy */;
+		};
+		190AB12325AA43370048E264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190AB11F25AA43370048E264 /* HealthShare WatchKit App */;
+			targetProxy = 190AB12225AA43370048E264 /* PBXContainerItemProxy */;
+		};
+		190AB13225AA433B0048E264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190AB12E25AA433B0048E264 /* HealthShare WatchKit Extension */;
+			targetProxy = 190AB13125AA433B0048E264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		190AB0FF25AA43330048E264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190AB10025AA43330048E264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		190AB10425AA43370048E264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190AB10525AA43370048E264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		190AB12525AA43370048E264 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190AB12625AA43370048E264 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190AB14025AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		190AB14125AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		190AB14325AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HealthShare WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		190AB14425AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "HealthShare WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		190AB14725AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HealthShare_WatchKit_Extension;
+				INFOPLIST_FILE = "HealthShare WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		190AB14825AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = HealthShare_WatchKit_Extension;
+				INFOPLIST_FILE = "HealthShare WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		190AB14B25AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		190AB14C25AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190AB14E25AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShareTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthShare.app/HealthShare";
+			};
+			name = Debug;
+		};
+		190AB14F25AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShareTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthShare.app/HealthShare";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190AB15125AA433F0048E264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShareUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthShare;
+			};
+			name = Debug;
+		};
+		190AB15225AA433F0048E264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HealthShareUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CMR-iTech.HealthShareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HealthShare;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190AB0F125AA43320048E264 /* Build configuration list for PBXProject "HealthShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB14025AA433F0048E264 /* Debug */,
+				190AB14125AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190AB14225AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB14325AA433F0048E264 /* Debug */,
+				190AB14425AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190AB14625AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB14725AA433F0048E264 /* Debug */,
+				190AB14825AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190AB14A25AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB14B25AA433F0048E264 /* Debug */,
+				190AB14C25AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190AB14D25AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB14E25AA433F0048E264 /* Debug */,
+				190AB14F25AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190AB15025AA433F0048E264 /* Build configuration list for PBXNativeTarget "HealthShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190AB15125AA433F0048E264 /* Debug */,
+				190AB15225AA433F0048E264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 190AB0EE25AA43320048E264 /* Project object */;
+}
