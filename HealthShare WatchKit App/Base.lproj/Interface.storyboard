@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HealthShare_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Blood Pressure" id="P6e-qc-SGj">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="Qbp-wD-isF"/>
+                            </gestureRecognizers>
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </button>
+                        <button width="1" alignment="left" title="Heart Rate" id="Dv3-pF-xVj">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="ky4-Y0-YGS"/>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" red="0.1997733296464195" green="0.41038593980322929" blue="0.85755343264248707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Steps" id="VYF-VA-SXI">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="Yt2-Ei-nHT"/>
+                            </gestureRecognizers>
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </button>
+                        <button width="1" alignment="left" title="Send Info" id="yYC-M5-kUk">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="a5s-4C-9mc"/>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </button>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="342"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label alignment="left" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label alignment="center" verticalAlignment="center" text="72 per min" id="3hu-nB-GcM"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.1633368171" green="0.33553594619999999" blue="0.70114488460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
@@ -32,14 +64,24 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="HealthShare_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="700 steps" id="Uxh-nM-N0Y"/>
+                    </items>
+                    <color key="backgroundColor" red="0.1633368171" green="0.33553594619999999" blue="0.70114488460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="HealthShare_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="120/80 mmGH" id="M8h-zG-8bM"/>
+                    </items>
+                    <color key="backgroundColor" red="0.1633368171" green="0.33553594619999999" blue="0.70114488460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
