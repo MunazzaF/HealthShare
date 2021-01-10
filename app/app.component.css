@@ -1,0 +1,47 @@
+.header{
+  text-align: center;
+  /*display: inline-block;*/
+  /*color: #00b3ff;*/
+  /*font-size: 40px;*/
+  padding: 5px 0;
+  background:linear-gradient(to right, rgb(168, 168, 168) 50%, rgb(147, 194, 255) 50%) bottom,
+  linear-gradient(to right, rgb(170, 188, 228) 50%, #ccc 50%) top;
+  background-repeat: no-repeat;
+  
+  /*background-size:100% 2px;*/
+}
+
+.header h1 {
+  font-family: sans-serif,Arial, Helvetica, sans-serif;
+  word-spacing: 30px;
+  letter-spacing: 30px;
+  text-align: center;
+  font-size: 70px;
+  color: #202b4b;
+}
+
+.header h2{
+  font-family: sans-serif,Arial, Helvetica, sans-serif;
+  word-spacing: 100px;
+  letter-spacing: 20px;
+  text-align: center;
+  font-size: 30 px;
+  color: black;
+
+}
+
+.first {
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  color: white;
+  font-family: sans-serif,Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+
+}
+.body{
+  background-color: rgb(0, 55, 128);
+  color: black;
+  
+  
+}
